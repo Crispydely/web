@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos- CRISPY DELLY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF; /* Fondo blanco */
+            margin: 0;
+            padding: 0;
+ background: url('pre.png') no-repeat center center fixed; /* Imagen de fondo */
+            background-size: cover;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #F5F5F5; /* Fondo gris claro */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            background-color: #FFA500; /* Naranja */
+            color: #FFFFFF;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .tab:hover {
+            background-color: #FF8C00; /* Naranja más oscuro al pasar el mouse */
+        }
+        .content {
+            padding: 20px;
+            background-color: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none; /* Ocultar contenido por defecto */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Productos- CRISPY DELLY</h1>
+    </div>
+    
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab" onclick="showTab('Buñuelos')">Buñuelos</div>
+        <div class="tab" onclick="showTab('Frituras')">Frituras</div>
+        
+    </div>
+    
+    <!-- Contenido de las pestañas -->
+    <div id="Buñuelos" class="content hidden">
+        <h2>Buñuelos</h2>
+<p>¡Descubre el sabor que te conecta con nuestras tradiciones! Los buñuelos, crujientes por fuera y suaves por dentro, son la delicia perfecta para cualquier ocasión. Elaborados con ingredientes frescos y amor, cada bocado te transporta a esos momentos mágicos en familia. </p>
+     <p>¡Prueba un buñuelo hoy y disfruta de la auténtica felicidad en cada mordisco!</p>
+  <ul>
+<li>Por tan solo $6 la pieza </li>
+
+</ul>
+<img src="bu.jpg" alt="Buñuelos">
+<img src="bu2.jpg" alt="Buñuelos">
+<img src="bu3.jpg" alt="Buñuelos">
+    </div>
+    
+    <div id="Frituras" class="content hidden">
+        <h2>Frituras</h2>
+      
+             <p>¡Descubre la pasión por las frituras con nuestros irresistibles chetos! Preparados con el sabor auténtico que tanto te encanta y una textura crujiente que te dejará sin palabras, nuestras frituras son el snack perfecto para cualquier momento del día. ¡No puedes perderte esta experiencia única de sabor y satisfacción en cada bolsa!</p>
+<p>¡Sumérgete en el placer de nuestras frituras y disfruta de cada crunch!</p>
+<ul>
+
+<li>Por tan solo $10 la bolsa</li>
+
+</ul>
+
+<img src="fri.jpg" alt="Información general">
+<img src="fri2.jpg" alt="Información general">
+<img src="fri3.jpg" alt="Información general">
+
+    </div>
+    
+   
+<script>
+    // Función para mostrar el contenido de las pestañas
+    function showTab(tabId) {
+        // Ocultar todos los contenidos
+        var contents = document.getElementsByClassName('content');
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].classList.add('hidden');
+        }
+        // Mostrar el contenido del tab seleccionado
+        var tabContent = document.getElementById(tabId);
+        tabContent.classList.remove('hidden');
+    }
+</script>
+<a href="inicio1.html">Regresar al Menú</a>
+</body>
+</html>
