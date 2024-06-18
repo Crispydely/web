@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISPY DELLY</title>
+    <style>
+        body {
+            background-color: #FFD700; /* Amarillo dorado */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+ background: url('seis.jpg') no-repeat center center fixed; /* Imagen de fondo */
+            background-size: cover;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .logo img {
+            width: 100px; /* Ajusta el tamaño según tus necesidades */
+            height: auto;
+        }
+        .center-box {
+            margin-top: 150px; /* Ajusta según necesites */
+            border: 2px solid #8B4513; /* Marrón oscuro */
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #F4A460; /* Marrón claro */
+        }
+        .center-box a {
+            text-decoration: none;
+            color: #000000;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+ .section {
+        width: 30%;
+        background-color: white;
+    }
+    .section1 {
+        background: url('1.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo">
+        <img src="imagen.jpg" alt="Logo de CRISPY DELLY">
+    </div>
+    <div class="center-box">
+	<a href="inicio4.html">Inicio</a>
+        <a href="inicio2.html">Crispy-Dely</a>
+        <a href="inicio3.html">Información General</a>
+    </div>
+</div>
+
+</body>
+</html>

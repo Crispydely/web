@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio - CRISPY DELLY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF; /* Fondo blanco */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #F5F5F5; /* Fondo gris claro */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            background-color: #FFA500; /* Naranja */
+            color: #FFFFFF;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .tab:hover {
+            background-color: #FF8C00; /* Naranja más oscuro al pasar el mouse */
+        }
+        .content {
+            padding: 20px;
+            background-color: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none; /* Ocultar contenido por defecto */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Descripción general - CRISPY DELLY</h1>
+    </div>
+    
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab" onclick="showTab('EMSAD')">Misión</div>
+        <div class="tab" onclick="showTab('Descripción general')">Visión</div>
+        
+    </div>
+    
+    <!-- Contenido de las pestañas -->
+    <div id="EMSAD" class="content hidden">
+        <h2>EMSAD 11</h2>
+       <ul>
+<li>Plantel: EMSaD 11 Yauhquemehcan</li>
+<li>Nombre: Edgar Vasquez Beristain</li>
+<li>Materia: Páginas Web 6 "B"</li>
+</ul>
+    </div>
+    
+    <div id="Descripción general" class="content hidden">
+        <h2>Descripción general de CRISPY DELLY</h2>
+       
+             <p>Esta empresa se dedica a la elaboración de frituras y buñuelos, tenemos como misión el bienestar y la satisfacción del cliente, asi como nuestra visión que es crecer nacionalmente.</p>   
+<p>Politicas de la empresa</p>
+<ul>
+
+<li>CALIDAD: Nos comprometemos a utilizar ingredientes frescos y de la más alta calidad en la preparación de nuestros productos</li>
+<li>SERVICIO AL CLIENTE: Nuestro personal está capacitado para ofrecer un servicio cordial, rápido y eficiente a todos nuestros clientes</li>
+<li>LIMPIEZA E HIGIENE: Mantenemos rigurosos estándares de limpieza e higiene en todas nuestras áreas de trabajo, garanizando la seguridad alimentaria y la salud de nuestros clientes y empleados</li>
+<li>PROGRAMA DE FLEXIBILIDAD LABORAL: Crispy Dely reconoce la importancia de sus empleados, así com el trabajo y la vida personal. Por lo tanto, se promoverá la implementación de horarios flexibles de trabajo</li>
+
+
+
+</ul>
+<p>Crispy Dely tambien tiene procedimientos opereativos, así como de segurida e hegiene, procedimientos administrativos etc. <p>
+    </div>
+    
+   
+<script>
+    // Función para mostrar el contenido de las pestañas
+    function showTab(tabId) {
+        // Ocultar todos los contenidos
+        var contents = document.getElementsByClassName('content');
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].classList.add('hidden');
+        }
+        // Mostrar el contenido del tab seleccionado
+        var tabContent = document.getElementById(tabId);
+        tabContent.classList.remove('hidden');
+    }
+</script>
+<a href="inicio1">Regresar al Menú</a>
+</body>
+</html>
+

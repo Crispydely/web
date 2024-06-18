@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio - CRISPY DELLY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF; /* Fondo blanco */
+            margin: 0;
+            padding: 0;
+ background: url('gato.jpg') no-repeat center center fixed; /* Imagen de fondo */
+            background-size: cover;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #F5F5F5; /* Fondo gris claro */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            background-color: #FFA500; /* Naranja */
+            color: #FFFFFF;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .tab:hover {
+            background-color: #FF8C00; /* Naranja más oscuro al pasar el mouse */
+        }
+        .content {
+            padding: 20px;
+            background-color: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none; /* Ocultar contenido por defecto */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Descripción general - CRISPY DELLY</h1>
+    </div>
+    
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab" onclick="showTab('EMSAD')">EMSAD</div>
+        <div class="tab" onclick="showTab('Descripción general')">Descripción general</div>
+ <div class="tab" onclick="showTab('Estrategias por nivel')">Estrategias por nivel</div>
+
+        
+    </div>
+    
+    <!-- Contenido de las pestañas -->
+    <div id="EMSAD" class="content hidden">
+        <h2>EMSAD 11</h2>
+       <ul>
+<li>Plantel: EMSaD 11 Yauhquemehcan</li>
+<li>Nombre: Edgar Vasquez Beristain</li>
+<li>Materia: Páginas Web 6 "B"</li>
+</ul>
+<img src="ime.jpg" alt="EMSAD">
+    </div>
+    
+    <div id="Descripción general" class="content hidden">
+        <h2>Descripción general de CRISPY DELLY</h2>
+      
+             <p>Esta empresa se dedica a la elaboración de frituras y buñuelos, tenemos como misión el bienestar y la satisfacción del cliente, asi como nuestra visión que es crecer nacionalmente.</p>   
+<p>Politicas de la empresa</p>
+<ul>
+
+<li>CALIDAD: Nos comprometemos a utilizar ingredientes frescos y de la más alta calidad en la preparación de nuestros productos</li>
+<li>SERVICIO AL CLIENTE: Nuestro personal está capacitado para ofrecer un servicio cordial, rápido y eficiente a todos nuestros clientes</li>
+<li>LIMPIEZA E HIGIENE: Mantenemos rigurosos estándares de limpieza e higiene en todas nuestras áreas de trabajo, garanizando la seguridad alimentaria y la salud de nuestros clientes y empleados</li>
+<li>PROGRAMA DE FLEXIBILIDAD LABORAL: Crispy Dely reconoce la importancia de sus empleados, así com el trabajo y la vida personal. Por lo tanto, se promoverá la implementación de horarios flexibles de trabajo</li>
+
+
+
+</ul>
+<p>Crispy Dely tambien tiene procedimientos opereativos, así como de segurida e hegiene, procedimientos administrativos etc. <p>
+
+<img src="emp.png" alt="Información general">
+
+    </div>
+    
+  <div id="Estrategias por nivel" class="content hidden">   
+
+<h2>Estrategias por nivel</h2>
+      
+             <p>Estrategia Directiva</p>
+<ul>
+<li>Establecer relaciones sólidas con los proovedores para garantizar la calidad y disponibilidad de los ingredientes</li>
+<li>Desarrollar politicas de control de calidad rigurosas para mantener altos estándares en la producción</li>
+</ul>
+<p>Mandos medios</p>
+<ul>
+<li>Implementar una estrategia de marketing digital centrada en redes sociales, contenido de blogs y publicidad en linea para aunmentar la visibilidad y atraer nuevos clientea</li>
+<li>Participar en eventos sociales y ferias gastronómicas para promover la marca y generar interés en los productos</li>
+</ul>
+<p>Estrategia operacional</p>
+<ul>
+<li>Optimizar los procesos de producción para aumentar la eficiencia y mantener la frescura de los productos</li>
+<li>Capacitar al personal en técnicas de cocin, servicio al cliente y manipulación de los alimentos para garantizar una experiencia satisfactoria para el cliente y cumplir con los estándares de higiene y seguridad alimentaria</li>
+</ul>
+</div>
+<script>
+    // Función para mostrar el contenido de las pestañas
+    function showTab(tabId) {
+        // Ocultar todos los contenidos
+        var contents = document.getElementsByClassName('content');
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].classList.add('hidden');
+        }
+        // Mostrar el contenido del tab seleccionado
+        var tabContent = document.getElementById(tabId);
+        tabContent.classList.remove('hidden');
+    }
+</script>
+<a href="inicio1.html">Regresar al Menú</a>
+</body>
+</html>
+
